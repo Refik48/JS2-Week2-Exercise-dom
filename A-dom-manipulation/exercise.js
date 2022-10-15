@@ -4,6 +4,7 @@ Task 1
 Write JavaScript below that logs:
     1. all the "p" element nodes of the document,
     --> should log a list of nodes with a length of 6
+    const 
 
     2. the first div element node
     --> should log the ".site-header" node
@@ -15,6 +16,25 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 
 */
+// 1.
+const myElementP = document.querySelectorAll("p");
+const myElementPArray = Array.from(myElementP)
+console.log(myElementP,myElementPArray[2]);
+
+// 2.
+const myElementH = document.querySelector(".site-header");
+// console.log(myElementH);
+// 3.
+const myElementJ= document.querySelector("#jumbotron-text");
+// console.log(myElementJ);
+// 4.
+const myElementPP= document.querySelectorAll(".primary-content p");
+// console.log(myElementPP);
+
+const myElementPPArray = Array.from(myElementPP);
+// console.log(myElementPPArray[1]);
+
+
 
 
 /*
